@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Shift View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="RGBShiftViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gO9-8l-GQl"/>
+                        <viewControllerLayoutGuide type="bottom" id="fYm-Fm-tdx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sg-Js-za0" userLabel="Live Preview" customClass="GPUImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3am-zU-i0S">
+                                        <rect key="frame" x="135" y="498" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.11557248168782586" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="3VQ-0w-2Qe"/>
+                                            <constraint firstAttribute="height" constant="50" id="nmE-V4-dO6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" image="glyphicons_377_riflescope.png">
+                                            <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionButtonPressed:" destination="2" eventType="touchUpInside" id="7Zb-cF-VAR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKh-GY-wmt">
+                                        <rect key="frame" x="250" y="498" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.0068759964619619085" green="0.3379141128823856" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mtW-yd-iM2"/>
+                                            <constraint firstAttribute="width" constant="50" id="omT-YY-YxO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="048 Videocamera.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toggleCaptureMode:" destination="2" eventType="touchUpInside" id="dHq-34-xqU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsX-9K-LlJ">
+                                        <rect key="frame" x="20" y="498" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.64154727749999996" green="1" blue="0.33763675669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="uhY-fx-6af"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="glyphicons_138_picture.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="presentCameraRollPicker:" destination="2" eventType="touchUpInside" id="WWp-aX-Olf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EsX-9K-LlJ" secondAttribute="bottom" constant="20" symbolic="YES" id="1X1-vH-foB"/>
+                                    <constraint firstItem="EsX-9K-LlJ" firstAttribute="leading" secondItem="4Sg-Js-za0" secondAttribute="leading" constant="20" symbolic="YES" id="Ac7-cz-4Ls"/>
+                                    <constraint firstItem="3am-zU-i0S" firstAttribute="top" secondItem="EsX-9K-LlJ" secondAttribute="top" id="Mqh-5t-EoQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="3am-zU-i0S" secondAttribute="bottom" constant="20" symbolic="YES" id="Zda-uF-Iyk"/>
+                                    <constraint firstItem="3am-zU-i0S" firstAttribute="centerX" secondItem="4Sg-Js-za0" secondAttribute="centerX" id="oEI-23-iAc"/>
+                                    <constraint firstAttribute="bottom" secondItem="VKh-GY-wmt" secondAttribute="bottom" constant="20" symbolic="YES" id="oSS-jt-Sxy"/>
+                                    <constraint firstAttribute="trailing" secondItem="VKh-GY-wmt" secondAttribute="trailing" constant="20" symbolic="YES" id="pjf-vC-1Nr"/>
+                                    <constraint firstItem="VKh-GY-wmt" firstAttribute="top" secondItem="3am-zU-i0S" secondAttribute="top" id="r1n-pO-gBH"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F4X-rB-WAa" appends="YES" id="QvP-Sr-OfE"/>
+                                    <outletCollection property="gestureRecognizers" destination="K54-Vj-Aq7" appends="YES" id="XQP-kW-V0t"/>
+                                    <outletCollection property="gestureRecognizers" destination="Mk3-vH-Tsc" appends="YES" id="dLg-8E-ZNs"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjZ-jg-2L6">
+                                <rect key="frame" x="128" y="252" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.64154727749999996" green="1" blue="0.33763675669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3JT-j2-QjV"/>
+                                    <constraint firstAttribute="width" constant="64" id="wK5-qd-j2M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="glyphicons_220_play_button.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startMoviePlaybackPressed:" destination="2" eventType="touchUpInside" id="fPU-21-pgL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Sg-Js-za0" firstAttribute="top" secondItem="3" secondAttribute="top" id="5xd-Um-An7"/>
+                            <constraint firstItem="qjZ-jg-2L6" firstAttribute="centerX" secondItem="4Sg-Js-za0" secondAttribute="centerX" id="Ex8-EW-vza"/>
+                            <constraint firstItem="qjZ-jg-2L6" firstAttribute="centerY" secondItem="4Sg-Js-za0" secondAttribute="centerY" id="Lhb-JW-APu"/>
+                            <constraint firstAttribute="bottom" secondItem="4Sg-Js-za0" secondAttribute="bottom" id="Pw6-W3-fWI"/>
+                            <constraint firstItem="4Sg-Js-za0" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="V6j-3d-KyW"/>
+                            <constraint firstItem="4Sg-Js-za0" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="gqt-5P-oPT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraRollPickerButton" destination="EsX-9K-LlJ" id="dKU-gz-q4Z"/>
+                        <outlet property="modeButton" destination="VKh-GY-wmt" id="Fdi-JA-gde"/>
+                        <outlet property="startMoviePlaybackButton" destination="qjZ-jg-2L6" id="o5V-Wo-Cf1"/>
+                        <outlet property="stillButton" destination="3am-zU-i0S" id="6Dg-x1-Qup"/>
+                        <outlet property="videoPreviewView" destination="4Sg-Js-za0" id="1Ma-eO-qpN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="F4X-rB-WAa" userLabel="Pan Red">
+                    <connections>
+                        <action selector="panDetected:" destination="2" id="cFd-xa-btR"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="K54-Vj-Aq7" userLabel="Double Tap to Reset">
+                    <connections>
+                        <action selector="doubleTapDetected:" destination="2" id="quv-Ub-Iej"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="2" maximumNumberOfTouches="2" id="Mk3-vH-Tsc" userLabel="Pan Blue">
+                    <connections>
+                        <action selector="twoFingerPanDetected:" destination="2" id="jht-M9-uDI"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="048 Videocamera.png" width="16" height="16"/>
+        <image name="glyphicons_138_picture.png" width="24" height="20"/>
+        <image name="glyphicons_220_play_button.png" width="25" height="25"/>
+        <image name="glyphicons_377_riflescope.png" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

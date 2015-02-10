@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		856F450D17DEA739004EA730 /* glyphicons_173_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 856F450B17DEA739004EA730 /* glyphicons_173_play@2x.png */; };
+		856F450E17DEA739004EA730 /* glyphicons_220_play_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 856F450C17DEA739004EA730 /* glyphicons_220_play_button@2x.png */; };
+		85AA8B4617C643B400009E66 /* glyphicons_377_riflescope@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA8B4517C643B400009E66 /* glyphicons_377_riflescope@2x.png */; };
+		85AA8B4817C6446B00009E66 /* 030 Camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA8B4717C6446B00009E66 /* 030 Camera@2x.png */; };
+		85AA8B4A17C6447D00009E66 /* 048 Videocamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA8B4917C6447D00009E66 /* 048 Videocamera@2x.png */; };
+		85BB3C141770C4330087E5C2 /* GPUImageRGBShiftFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BB3C131770C4330087E5C2 /* GPUImageRGBShiftFilter.m */; };
+		85D0DB7D1770C79F005077DB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB7C1770C79F005077DB /* OpenGLES.framework */; };
+		85D0DB7F1770C7AB005077DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB7E1770C7AB005077DB /* QuartzCore.framework */; };
+		85D0DB9417712CD7005077DB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB9317712CD7005077DB /* CoreVideo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		85D0DBA117712FBB005077DB /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB9C17712F96005077DB /* libGPUImage.a */; };
+		85EFC3D317C9537A00406E5B /* glyphicons_008_film@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EFC3D217C9537A00406E5B /* glyphicons_008_film@2x.png */; };
+		85EFC3D717C953B800406E5B /* glyphicons_138_picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EFC3D617C953B800406E5B /* glyphicons_138_picture@2x.png */; };
+		85EFC3D917C95A9D00406E5B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EFC3D817C95A9D00406E5B /* MobileCoreServices.framework */; };
+		85FE8A38176BA86200900F3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A37176BA86200900F3A /* UIKit.framework */; };
+		85FE8A3A176BA86200900F3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A39176BA86200900F3A /* Foundation.framework */; };
+		85FE8A3C176BA86200900F3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A3B176BA86200900F3A /* CoreGraphics.framework */; };
+		85FE8A42176BA86200900F3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A40176BA86200900F3A /* InfoPlist.strings */; };
+		85FE8A44176BA86200900F3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A43176BA86200900F3A /* main.m */; };
+		85FE8A48176BA86200900F3A /* RGBShiftAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A47176BA86200900F3A /* RGBShiftAppDelegate.m */; };
+		85FE8A4A176BA86200900F3A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A49176BA86200900F3A /* Default.png */; };
+		85FE8A4C176BA86300900F3A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A4B176BA86200900F3A /* Default@2x.png */; };
+		85FE8A4E176BA86300900F3A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A4D176BA86300900F3A /* Default-568h@2x.png */; };
+		85FE8A51176BA86300900F3A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A4F176BA86300900F3A /* MainStoryboard.storyboard */; };
+		85FE8A54176BA86300900F3A /* RGBShiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A53176BA86300900F3A /* RGBShiftViewController.m */; };
+		85FE8A5C176BA86300900F3A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A5B176BA86300900F3A /* SenTestingKit.framework */; };
+		85FE8A5D176BA86300900F3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A37176BA86200900F3A /* UIKit.framework */; };
+		85FE8A5E176BA86300900F3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A39176BA86200900F3A /* Foundation.framework */; };
+		85FE8A66176BA86300900F3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A64176BA86300900F3A /* InfoPlist.strings */; };
+		85FE8A69176BA86300900F3A /* RGBShiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A68176BA86300900F3A /* RGBShiftTests.m */; };
+		85FE8A73176BA8A500900F3A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A72176BA8A500900F3A /* AVFoundation.framework */; };
+		85FE8A76176BAB1300900F3A /* AVCamCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A75176BAB1300900F3A /* AVCamCaptureManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		85FE8A77176BAB1300900F3A /* AVCamCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A75176BAB1300900F3A /* AVCamCaptureManager.m */; };
+		85FE8A7A176BAB4100900F3A /* AVCamUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A79176BAB4100900F3A /* AVCamUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		85FE8A7B176BAB4100900F3A /* AVCamUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A79176BAB4100900F3A /* AVCamUtilities.m */; };
+		85FE8A7D176BACC800900F3A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A7C176BACC800900F3A /* AssetsLibrary.framework */; };
+		85FE8A7F176BB3AB00900F3A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A7E176BB3AB00900F3A /* CoreMedia.framework */; };
+		85FFAC4718045601000B9467 /* video_indicator_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FFAC4618045601000B9467 /* video_indicator_light.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85D0DB9B17712F96005077DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85D0DB9517712F96005077DB /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		85D0DB9D17712F96005077DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85D0DB9517712F96005077DB /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A34414DDB1EC00852800;
+			remoteInfo = GPUImageTests;
+		};
+		85D0DB9F17712FB2005077DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85D0DB9517712F96005077DB /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		85FE8A5F176BA86300900F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85FE8A2C176BA86200900F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85FE8A33176BA86200900F3A;
+			remoteInfo = RGBShift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		856F450B17DEA739004EA730 /* glyphicons_173_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons_173_play@2x.png"; path = "../../glyphicons_all/glyphicons/png/glyphicons_173_play@2x.png"; sourceTree = "<group>"; };
+		856F450C17DEA739004EA730 /* glyphicons_220_play_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons_220_play_button@2x.png"; path = "../../glyphicons_all/glyphicons/png/glyphicons_220_play_button@2x.png"; sourceTree = "<group>"; };
+		85AA8B4517C643B400009E66 /* glyphicons_377_riflescope@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_377_riflescope@2x.png"; sourceTree = "<group>"; };
+		85AA8B4717C6446B00009E66 /* 030 Camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "030 Camera@2x.png"; sourceTree = "<group>"; };
+		85AA8B4917C6447D00009E66 /* 048 Videocamera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "048 Videocamera@2x.png"; sourceTree = "<group>"; };
+		85BB3C121770C4330087E5C2 /* GPUImageRGBShiftFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRGBShiftFilter.h; sourceTree = "<group>"; };
+		85BB3C131770C4330087E5C2 /* GPUImageRGBShiftFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageRGBShiftFilter.m; sourceTree = "<group>"; };
+		85D0DB7C1770C79F005077DB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		85D0DB7E1770C7AB005077DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		85D0DB9317712CD7005077DB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		85D0DB9517712F96005077DB /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = Frameworks/GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		85EFC3D217C9537A00406E5B /* glyphicons_008_film@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_008_film@2x.png"; sourceTree = "<group>"; };
+		85EFC3D617C953B800406E5B /* glyphicons_138_picture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_138_picture@2x.png"; sourceTree = "<group>"; };
+		85EFC3D817C95A9D00406E5B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		85FE8A34176BA86200900F3A /* RGBShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FE8A37176BA86200900F3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85FE8A39176BA86200900F3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85FE8A3B176BA86200900F3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		85FE8A3F176BA86200900F3A /* RGBShift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RGBShift-Info.plist"; sourceTree = "<group>"; };
+		85FE8A41176BA86200900F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85FE8A43176BA86200900F3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85FE8A45176BA86200900F3A /* RGBShift-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RGBShift-Prefix.pch"; sourceTree = "<group>"; };
+		85FE8A46176BA86200900F3A /* RGBShiftAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBShiftAppDelegate.h; sourceTree = "<group>"; };
+		85FE8A47176BA86200900F3A /* RGBShiftAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBShiftAppDelegate.m; sourceTree = "<group>"; };
+		85FE8A49176BA86200900F3A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		85FE8A4B176BA86200900F3A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		85FE8A4D176BA86300900F3A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		85FE8A50176BA86300900F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		85FE8A52176BA86300900F3A /* RGBShiftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBShiftViewController.h; sourceTree = "<group>"; };
+		85FE8A53176BA86300900F3A /* RGBShiftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBShiftViewController.m; sourceTree = "<group>"; };
+		85FE8A5A176BA86300900F3A /* RGBShiftTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGBShiftTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FE8A5B176BA86300900F3A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		85FE8A63176BA86300900F3A /* RGBShiftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RGBShiftTests-Info.plist"; sourceTree = "<group>"; };
+		85FE8A65176BA86300900F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85FE8A67176BA86300900F3A /* RGBShiftTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBShiftTests.h; sourceTree = "<group>"; };
+		85FE8A68176BA86300900F3A /* RGBShiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBShiftTests.m; sourceTree = "<group>"; };
+		85FE8A72176BA8A500900F3A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		85FE8A74176BAB1300900F3A /* AVCamCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamCaptureManager.h; sourceTree = "<group>"; };
+		85FE8A75176BAB1300900F3A /* AVCamCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamCaptureManager.m; sourceTree = "<group>"; };
+		85FE8A78176BAB4100900F3A /* AVCamUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamUtilities.h; sourceTree = "<group>"; };
+		85FE8A79176BAB4100900F3A /* AVCamUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamUtilities.m; sourceTree = "<group>"; };
+		85FE8A7C176BACC800900F3A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		85FE8A7E176BB3AB00900F3A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		85FFAC4618045601000B9467 /* video_indicator_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_indicator_light.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85FE8A31176BA86200900F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EFC3D917C95A9D00406E5B /* MobileCoreServices.framework in Frameworks */,
+				85D0DBA117712FBB005077DB /* libGPUImage.a in Frameworks */,
+				85D0DB9417712CD7005077DB /* CoreVideo.framework in Frameworks */,
+				85D0DB7F1770C7AB005077DB /* QuartzCore.framework in Frameworks */,
+				85D0DB7D1770C79F005077DB /* OpenGLES.framework in Frameworks */,
+				85FE8A7F176BB3AB00900F3A /* CoreMedia.framework in Frameworks */,
+				85FE8A7D176BACC800900F3A /* AssetsLibrary.framework in Frameworks */,
+				85FE8A73176BA8A500900F3A /* AVFoundation.framework in Frameworks */,
+				85FE8A38176BA86200900F3A /* UIKit.framework in Frameworks */,
+				85FE8A3A176BA86200900F3A /* Foundation.framework in Frameworks */,
+				85FE8A3C176BA86200900F3A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FE8A56176BA86300900F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FE8A5C176BA86300900F3A /* SenTestingKit.framework in Frameworks */,
+				85FE8A5D176BA86300900F3A /* UIKit.framework in Frameworks */,
+				85FE8A5E176BA86300900F3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85D0DB9617712F96005077DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85D0DB9C17712F96005077DB /* libGPUImage.a */,
+				85D0DB9E17712F96005077DB /* GPUImageTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85FE8A2B176BA86200900F3A = {
+			isa = PBXGroup;
+			children = (
+				85EFC3D817C95A9D00406E5B /* MobileCoreServices.framework */,
+				85D0DB9317712CD7005077DB /* CoreVideo.framework */,
+				85D0DB7E1770C7AB005077DB /* QuartzCore.framework */,
+				85D0DB7C1770C79F005077DB /* OpenGLES.framework */,
+				85FE8A3D176BA86200900F3A /* RGBShift */,
+				85FE8A61176BA86300900F3A /* RGBShiftTests */,
+				85FE8A36176BA86200900F3A /* Frameworks */,
+				85FE8A35176BA86200900F3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85FE8A35176BA86200900F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85FE8A34176BA86200900F3A /* RGBShift.app */,
+				85FE8A5A176BA86300900F3A /* RGBShiftTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85FE8A36176BA86200900F3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85D0DB9517712F96005077DB /* GPUImage.xcodeproj */,
+				85FE8A7E176BB3AB00900F3A /* CoreMedia.framework */,
+				85FE8A7C176BACC800900F3A /* AssetsLibrary.framework */,
+				85FE8A72176BA8A500900F3A /* AVFoundation.framework */,
+				85FE8A37176BA86200900F3A /* UIKit.framework */,
+				85FE8A39176BA86200900F3A /* Foundation.framework */,
+				85FE8A3B176BA86200900F3A /* CoreGraphics.framework */,
+				85FE8A5B176BA86300900F3A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85FE8A3D176BA86200900F3A /* RGBShift */ = {
+			isa = PBXGroup;
+			children = (
+				85FE8A4F176BA86300900F3A /* MainStoryboard.storyboard */,
+				85FE8A46176BA86200900F3A /* RGBShiftAppDelegate.h */,
+				85FE8A47176BA86200900F3A /* RGBShiftAppDelegate.m */,
+				85FE8A52176BA86300900F3A /* RGBShiftViewController.h */,
+				85FE8A53176BA86300900F3A /* RGBShiftViewController.m */,
+				85BB3C121770C4330087E5C2 /* GPUImageRGBShiftFilter.h */,
+				85BB3C131770C4330087E5C2 /* GPUImageRGBShiftFilter.m */,
+				85FE8A74176BAB1300900F3A /* AVCamCaptureManager.h */,
+				85FE8A75176BAB1300900F3A /* AVCamCaptureManager.m */,
+				85FE8A78176BAB4100900F3A /* AVCamUtilities.h */,
+				85FE8A79176BAB4100900F3A /* AVCamUtilities.m */,
+				85FE8A3E176BA86200900F3A /* Supporting Files */,
+			);
+			path = RGBShift;
+			sourceTree = "<group>";
+		};
+		85FE8A3E176BA86200900F3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85FFAC4618045601000B9467 /* video_indicator_light.png */,
+				856F450B17DEA739004EA730 /* glyphicons_173_play@2x.png */,
+				856F450C17DEA739004EA730 /* glyphicons_220_play_button@2x.png */,
+				85EFC3D617C953B800406E5B /* glyphicons_138_picture@2x.png */,
+				85EFC3D217C9537A00406E5B /* glyphicons_008_film@2x.png */,
+				85FE8A3F176BA86200900F3A /* RGBShift-Info.plist */,
+				85FE8A40176BA86200900F3A /* InfoPlist.strings */,
+				85AA8B4517C643B400009E66 /* glyphicons_377_riflescope@2x.png */,
+				85FE8A43176BA86200900F3A /* main.m */,
+				85AA8B4917C6447D00009E66 /* 048 Videocamera@2x.png */,
+				85AA8B4717C6446B00009E66 /* 030 Camera@2x.png */,
+				85FE8A45176BA86200900F3A /* RGBShift-Prefix.pch */,
+				85FE8A49176BA86200900F3A /* Default.png */,
+				85FE8A4B176BA86200900F3A /* Default@2x.png */,
+				85FE8A4D176BA86300900F3A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85FE8A61176BA86300900F3A /* RGBShiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				85FE8A67176BA86300900F3A /* RGBShiftTests.h */,
+				85FE8A68176BA86300900F3A /* RGBShiftTests.m */,
+				85FE8A62176BA86300900F3A /* Supporting Files */,
+			);
+			path = RGBShiftTests;
+			sourceTree = "<group>";
+		};
+		85FE8A62176BA86300900F3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85FE8A63176BA86300900F3A /* RGBShiftTests-Info.plist */,
+				85FE8A64176BA86300900F3A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85FE8A33176BA86200900F3A /* RGBShift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FE8A6C176BA86300900F3A /* Build configuration list for PBXNativeTarget "RGBShift" */;
+			buildPhases = (
+				85FE8A30176BA86200900F3A /* Sources */,
+				85FE8A31176BA86200900F3A /* Frameworks */,
+				85FE8A32176BA86200900F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D0DBA017712FB2005077DB /* PBXTargetDependency */,
+			);
+			name = RGBShift;
+			productName = RGBShift;
+			productReference = 85FE8A34176BA86200900F3A /* RGBShift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85FE8A59176BA86300900F3A /* RGBShiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FE8A6F176BA86300900F3A /* Build configuration list for PBXNativeTarget "RGBShiftTests" */;
+			buildPhases = (
+				85FE8A55176BA86300900F3A /* Sources */,
+				85FE8A56176BA86300900F3A /* Frameworks */,
+				85FE8A57176BA86300900F3A /* Resources */,
+				85FE8A58176BA86300900F3A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85FE8A60176BA86300900F3A /* PBXTargetDependency */,
+			);
+			name = RGBShiftTests;
+			productName = RGBShiftTests;
+			productReference = 85FE8A5A176BA86300900F3A /* RGBShiftTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85FE8A2C176BA86200900F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RGBShift;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mason Kramer";
+				TargetAttributes = {
+					85FE8A33176BA86200900F3A = {
+						DevelopmentTeam = 9N3Q32TSNX;
+					};
+				};
+			};
+			buildConfigurationList = 85FE8A2F176BA86200900F3A /* Build configuration list for PBXProject "RGBShift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85FE8A2B176BA86200900F3A;
+			productRefGroup = 85FE8A35176BA86200900F3A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 85D0DB9617712F96005077DB /* Products */;
+					ProjectRef = 85D0DB9517712F96005077DB /* GPUImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				85FE8A33176BA86200900F3A /* RGBShift */,
+				85FE8A59176BA86300900F3A /* RGBShiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		85D0DB9C17712F96005077DB /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 85D0DB9B17712F96005077DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85D0DB9E17712F96005077DB /* GPUImageTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests.octest;
+			remoteRef = 85D0DB9D17712F96005077DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85FE8A32176BA86200900F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FE8A42176BA86200900F3A /* InfoPlist.strings in Resources */,
+				85FE8A4A176BA86200900F3A /* Default.png in Resources */,
+				85FE8A4C176BA86300900F3A /* Default@2x.png in Resources */,
+				85FE8A4E176BA86300900F3A /* Default-568h@2x.png in Resources */,
+				85FE8A51176BA86300900F3A /* MainStoryboard.storyboard in Resources */,
+				85FFAC4718045601000B9467 /* video_indicator_light.png in Resources */,
+				85AA8B4617C643B400009E66 /* glyphicons_377_riflescope@2x.png in Resources */,
+				85AA8B4817C6446B00009E66 /* 030 Camera@2x.png in Resources */,
+				85AA8B4A17C6447D00009E66 /* 048 Videocamera@2x.png in Resources */,
+				85EFC3D317C9537A00406E5B /* glyphicons_008_film@2x.png in Resources */,
+				85EFC3D717C953B800406E5B /* glyphicons_138_picture@2x.png in Resources */,
+				856F450D17DEA739004EA730 /* glyphicons_173_play@2x.png in Resources */,
+				856F450E17DEA739004EA730 /* glyphicons_220_play_button@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FE8A57176BA86300900F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FE8A66176BA86300900F3A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85FE8A58176BA86300900F3A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85FE8A30176BA86200900F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FE8A44176BA86200900F3A /* main.m in Sources */,
+				85FE8A48176BA86200900F3A /* RGBShiftAppDelegate.m in Sources */,
+				85FE8A54176BA86300900F3A /* RGBShiftViewController.m in Sources */,
+				85FE8A76176BAB1300900F3A /* AVCamCaptureManager.m in Sources */,
+				85FE8A7A176BAB4100900F3A /* AVCamUtilities.m in Sources */,
+				85BB3C141770C4330087E5C2 /* GPUImageRGBShiftFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FE8A55176BA86300900F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FE8A69176BA86300900F3A /* RGBShiftTests.m in Sources */,
+				85FE8A77176BAB1300900F3A /* AVCamCaptureManager.m in Sources */,
+				85FE8A7B176BAB4100900F3A /* AVCamUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85D0DBA017712FB2005077DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage;
+			targetProxy = 85D0DB9F17712FB2005077DB /* PBXContainerItemProxy */;
+		};
+		85FE8A60176BA86300900F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85FE8A33176BA86200900F3A /* RGBShift */;
+			targetProxy = 85FE8A5F176BA86300900F3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85FE8A40176BA86200900F3A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85FE8A41176BA86200900F3A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		85FE8A4F176BA86300900F3A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85FE8A50176BA86300900F3A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		85FE8A64176BA86300900F3A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85FE8A65176BA86300900F3A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85FE8A6A176BA86300900F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mason Kramer (P8UG5L6563)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "2DC70D9E-EDDC-4039-BBE7-CF5C08371416";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/GPUImage/framework/**";
+			};
+			name = Debug;
+		};
+		85FE8A6B176BA86300900F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mason Kramer (P8UG5L6563)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mason Kramer (P8UG5L6563)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "2DC70D9E-EDDC-4039-BBE7-CF5C08371416";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2DC70D9E-EDDC-4039-BBE7-CF5C08371416";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/GPUImage/framework/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85FE8A6D176BA86300900F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGBShift/RGBShift-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "RGBShift/RGBShift-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/GPUImage/framework/Source/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		85FE8A6E176BA86300900F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGBShift/RGBShift-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "RGBShift/RGBShift-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/GPUImage/framework/Source/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		85FE8A70176BA86300900F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RGBShift.app/RGBShift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGBShift/RGBShift-Prefix.pch";
+				INFOPLIST_FILE = "RGBShiftTests/RGBShiftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		85FE8A71176BA86300900F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RGBShift.app/RGBShift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGBShift/RGBShift-Prefix.pch";
+				INFOPLIST_FILE = "RGBShiftTests/RGBShiftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85FE8A2F176BA86200900F3A /* Build configuration list for PBXProject "RGBShift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FE8A6A176BA86300900F3A /* Debug */,
+				85FE8A6B176BA86300900F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FE8A6C176BA86300900F3A /* Build configuration list for PBXNativeTarget "RGBShift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FE8A6D176BA86300900F3A /* Debug */,
+				85FE8A6E176BA86300900F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FE8A6F176BA86300900F3A /* Build configuration list for PBXNativeTarget "RGBShiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FE8A70176BA86300900F3A /* Debug */,
+				85FE8A71176BA86300900F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85FE8A2C176BA86200900F3A /* Project object */;
+}
