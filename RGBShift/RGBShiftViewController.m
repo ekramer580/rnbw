@@ -69,18 +69,13 @@ UIInterfaceOrientation OutputOrientationFromDeviceOrientation(UIDeviceOrientatio
     }
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskPortrait + UIInterfaceOrientationMaskPortraitUpsideDown;
+    return UIInterfaceOrientationMaskPortrait; // + UIInterfaceOrientationMaskPortraitUpsideDown;
 }
 
 UIInterfaceOrientation currentInterfaceOrientation() {
-    UIDevice *myDevice = [UIDevice currentDevice];
-    [myDevice beginGeneratingDeviceOrientationNotifications];
-    UIDeviceOrientation currentOrientation = [myDevice orientation];
-    
-    [myDevice endGeneratingDeviceOrientationNotifications];
-    
+    UIInterfaceOrientation currentOrientation = [[UIApplication sharedApplication] statusBarOrientation];
     return currentOrientation;
 }
 
@@ -89,14 +84,16 @@ UIDeviceOrientation currentDeviceOrientation() {
 }
 
 
--(void)deviceOrientationChanged:(NSNotification *)notification
+- (void)deviceOrientationChanged:(NSNotification *)notification
 {
     [self updateAVOrientation];
 }
 
--(void) updateAVOrientation {
-    self.stillCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
-    self.videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
+- (void)updateAVOrientation {
+    UIInterfaceOrientation statusBarOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+    
+    self.stillCamera.outputImageOrientation = statusBarOrientation;
+    self.videoCamera.outputImageOrientation = statusBarOrientation;
 }
 
 - (void)viewDidLoad
@@ -194,7 +191,7 @@ UIDeviceOrientation currentDeviceOrientation() {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
-    imagePicker.mediaTypes = [[NSArray alloc] initWithObjects:kUTTypeMovie, kUTTypeImage, nil];
+    imagePicker.mediaTypes = [[NSArray alloc] initWithObjects:(NSString *)kUTTypeMovie, kUTTypeImage, nil];
 
     imagePicker.allowsEditing = NO;
 //    imagePicker.showsCameraControls = NO;
@@ -298,7 +295,7 @@ UIDeviceOrientation currentDeviceOrientation() {
     long width  = [[outputSettings objectForKey:@"Width"]  longValue];
     long height = [[outputSettings objectForKey:@"Height"] longValue];
     
-    if (UIInterfaceOrientationIsPortrait([self.videoCamera outputImageOrientation])) {
+    if (UIInterfaceOrientationIsPortrait(self.videoCamera.outputImageOrientation)) {
         long buf = width;
         width = height;
         height = buf;
@@ -400,11 +397,10 @@ UIDeviceOrientation currentDeviceOrientation() {
             [self.filter1 addTarget:self.videoPreviewView];
         }
     }
-    
+    [self updateAVOrientation];
     [self.videoCamera addTarget:self.filter1];
     [self.videoCamera startCameraCapture];
     [self setupMovieWriterForVideoCapture];
-    [self updateAVOrientation];
 }
 
 -(void)switchToMovieReplayMode:(NSURL*) movieURL {
@@ -448,12 +444,14 @@ UIDeviceOrientation currentDeviceOrientation() {
 - (IBAction)takeStill:(id)sender {
     [self.stillButton setEnabled:NO];
     [self.stillCamera capturePhotoAsJPEGProcessedUpToFilter:self.filter1 withCompletionHandler:^(NSData *processedJPEG, NSError *error){
-
         NSLog(@"%@", self.stillCamera.currentCaptureMetadata);
-        UIImage *image = [UIImage imageWithData:processedJPEG];
-        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-        [self.stillButton setEnabled:YES];
-
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            UIImage *image = [UIImage imageWithData:processedJPEG];
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.stillButton setEnabled:YES];
+            });
+        });
     }];
 }
 
