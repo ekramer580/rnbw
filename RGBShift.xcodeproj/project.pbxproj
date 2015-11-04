@@ -9,18 +9,11 @@
 /* Begin PBXBuildFile section */
 		4DDB9CE41BE93649009ECD08 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDB9CE31BE93649009ECD08 /* Media.xcassets */; };
 		4DDB9CE91BE9421D009ECD08 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB9CE81BE9421D009ECD08 /* TutorialViewController.m */; };
-		856F450D17DEA739004EA730 /* glyphicons_173_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 856F450B17DEA739004EA730 /* glyphicons_173_play@2x.png */; };
-		856F450E17DEA739004EA730 /* glyphicons_220_play_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 856F450C17DEA739004EA730 /* glyphicons_220_play_button@2x.png */; };
-		85AA8B4617C643B400009E66 /* glyphicons_377_riflescope@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA8B4517C643B400009E66 /* glyphicons_377_riflescope@2x.png */; };
-		85AA8B4817C6446B00009E66 /* 030 Camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA8B4717C6446B00009E66 /* 030 Camera@2x.png */; };
-		85AA8B4A17C6447D00009E66 /* 048 Videocamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA8B4917C6447D00009E66 /* 048 Videocamera@2x.png */; };
 		85BB3C141770C4330087E5C2 /* GPUImageRGBShiftFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BB3C131770C4330087E5C2 /* GPUImageRGBShiftFilter.m */; };
 		85D0DB7D1770C79F005077DB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB7C1770C79F005077DB /* OpenGLES.framework */; };
 		85D0DB7F1770C7AB005077DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB7E1770C7AB005077DB /* QuartzCore.framework */; };
 		85D0DB9417712CD7005077DB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB9317712CD7005077DB /* CoreVideo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		85D0DBA117712FBB005077DB /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB9C17712F96005077DB /* libGPUImage.a */; };
-		85EFC3D317C9537A00406E5B /* glyphicons_008_film@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EFC3D217C9537A00406E5B /* glyphicons_008_film@2x.png */; };
-		85EFC3D717C953B800406E5B /* glyphicons_138_picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EFC3D617C953B800406E5B /* glyphicons_138_picture@2x.png */; };
 		85EFC3D917C95A9D00406E5B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EFC3D817C95A9D00406E5B /* MobileCoreServices.framework */; };
 		85FE8A38176BA86200900F3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A37176BA86200900F3A /* UIKit.framework */; };
 		85FE8A3A176BA86200900F3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A39176BA86200900F3A /* Foundation.framework */; };
@@ -42,7 +35,6 @@
 		85FE8A7B176BAB4100900F3A /* AVCamUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A79176BAB4100900F3A /* AVCamUtilities.m */; };
 		85FE8A7D176BACC800900F3A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A7C176BACC800900F3A /* AssetsLibrary.framework */; };
 		85FE8A7F176BB3AB00900F3A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A7E176BB3AB00900F3A /* CoreMedia.framework */; };
-		85FFAC4718045601000B9467 /* video_indicator_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FFAC4618045601000B9467 /* video_indicator_light.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,19 +72,12 @@
 		4DDB9CE31BE93649009ECD08 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4DDB9CE71BE9421D009ECD08 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
 		4DDB9CE81BE9421D009ECD08 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
-		856F450B17DEA739004EA730 /* glyphicons_173_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_173_play@2x.png"; sourceTree = "<group>"; };
-		856F450C17DEA739004EA730 /* glyphicons_220_play_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_220_play_button@2x.png"; sourceTree = "<group>"; };
-		85AA8B4517C643B400009E66 /* glyphicons_377_riflescope@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_377_riflescope@2x.png"; sourceTree = "<group>"; };
-		85AA8B4717C6446B00009E66 /* 030 Camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "030 Camera@2x.png"; sourceTree = "<group>"; };
-		85AA8B4917C6447D00009E66 /* 048 Videocamera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "048 Videocamera@2x.png"; sourceTree = "<group>"; };
 		85BB3C121770C4330087E5C2 /* GPUImageRGBShiftFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRGBShiftFilter.h; sourceTree = "<group>"; };
 		85BB3C131770C4330087E5C2 /* GPUImageRGBShiftFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageRGBShiftFilter.m; sourceTree = "<group>"; };
 		85D0DB7C1770C79F005077DB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		85D0DB7E1770C7AB005077DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		85D0DB9317712CD7005077DB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		85D0DB9517712F96005077DB /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = Frameworks/GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
-		85EFC3D217C9537A00406E5B /* glyphicons_008_film@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_008_film@2x.png"; sourceTree = "<group>"; };
-		85EFC3D617C953B800406E5B /* glyphicons_138_picture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_138_picture@2x.png"; sourceTree = "<group>"; };
 		85EFC3D817C95A9D00406E5B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		85FE8A34176BA86200900F3A /* RGBShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FE8A37176BA86200900F3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -120,7 +105,6 @@
 		85FE8A79176BAB4100900F3A /* AVCamUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamUtilities.m; sourceTree = "<group>"; };
 		85FE8A7C176BACC800900F3A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		85FE8A7E176BB3AB00900F3A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		85FFAC4618045601000B9467 /* video_indicator_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_indicator_light.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,17 +211,9 @@
 		85FE8A3E176BA86200900F3A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				85FFAC4618045601000B9467 /* video_indicator_light.png */,
-				856F450B17DEA739004EA730 /* glyphicons_173_play@2x.png */,
-				856F450C17DEA739004EA730 /* glyphicons_220_play_button@2x.png */,
-				85EFC3D617C953B800406E5B /* glyphicons_138_picture@2x.png */,
-				85EFC3D217C9537A00406E5B /* glyphicons_008_film@2x.png */,
 				85FE8A3F176BA86200900F3A /* RGBShift-Info.plist */,
 				85FE8A40176BA86200900F3A /* InfoPlist.strings */,
-				85AA8B4517C643B400009E66 /* glyphicons_377_riflescope@2x.png */,
 				85FE8A43176BA86200900F3A /* main.m */,
-				85AA8B4917C6447D00009E66 /* 048 Videocamera@2x.png */,
-				85AA8B4717C6446B00009E66 /* 030 Camera@2x.png */,
 				85FE8A45176BA86200900F3A /* RGBShift-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -300,7 +276,7 @@
 			name = RGBShiftTests;
 			productName = RGBShiftTests;
 			productReference = 85FE8A5A176BA86300900F3A /* RGBShiftTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -309,13 +285,9 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RGBShift;
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Mason Kramer";
-				TargetAttributes = {
-					85FE8A33176BA86200900F3A = {
-						DevelopmentTeam = 9N3Q32TSNX;
-					};
-				};
 			};
 			buildConfigurationList = 85FE8A2F176BA86200900F3A /* Build configuration list for PBXProject "RGBShift" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -366,14 +338,6 @@
 				85FE8A42176BA86200900F3A /* InfoPlist.strings in Resources */,
 				4DDB9CE41BE93649009ECD08 /* Media.xcassets in Resources */,
 				85FE8A51176BA86300900F3A /* MainStoryboard.storyboard in Resources */,
-				85FFAC4718045601000B9467 /* video_indicator_light.png in Resources */,
-				85AA8B4617C643B400009E66 /* glyphicons_377_riflescope@2x.png in Resources */,
-				85AA8B4817C6446B00009E66 /* 030 Camera@2x.png in Resources */,
-				85AA8B4A17C6447D00009E66 /* 048 Videocamera@2x.png in Resources */,
-				85EFC3D317C9537A00406E5B /* glyphicons_008_film@2x.png in Resources */,
-				85EFC3D717C953B800406E5B /* glyphicons_138_picture@2x.png in Resources */,
-				856F450D17DEA739004EA730 /* glyphicons_173_play@2x.png in Resources */,
-				856F450E17DEA739004EA730 /* glyphicons_220_play_button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +450,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mason Kramer (P8UG5L6563)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -552,6 +517,7 @@
 					"-all_load",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kramersoftwarellc.rnbw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/GPUImage/framework/Source/**";
@@ -575,6 +541,7 @@
 					"-all_load",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kramersoftwarellc.rnbw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/GPUImage/framework/Source/**";
@@ -593,6 +560,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RGBShift/RGBShift-Prefix.pch";
 				INFOPLIST_FILE = "RGBShiftTests/RGBShiftTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sadhana-Enterprises.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -610,6 +578,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RGBShift/RGBShift-Prefix.pch";
 				INFOPLIST_FILE = "RGBShiftTests/RGBShiftTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sadhana-Enterprises.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

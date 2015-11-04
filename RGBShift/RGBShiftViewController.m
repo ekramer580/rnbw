@@ -295,8 +295,8 @@ UIDeviceOrientation currentDeviceOrientation() {
 }
 
 -(void)startRecordingIndicator {
-    UIImage * cameraImage = [UIImage imageNamed:@"video_indicator_light.png"];
-    [self.modeButton setImage:cameraImage forState:UIControlStateNormal];
+    UIImage *recordImage = [UIImage imageNamed:@"Record"];
+    [self.modeButton setImage:recordImage forState:UIControlStateNormal];
     
     if (self.blinkTimer == nil) {
         self.blinkTimer = [NSTimer scheduledTimerWithTimeInterval:.8
@@ -413,7 +413,7 @@ UIDeviceOrientation currentDeviceOrientation() {
 -(void)switchToStillCameraMode {
     self.mode = stillCaptureJPEG;
     
-    UIImage * cameraImage = [UIImage imageNamed:@"030 Camera@2x.png"];
+    UIImage * cameraImage = [UIImage imageNamed:@"Camera"];
     [self.modeButton setImage:cameraImage forState:UIControlStateNormal];
     
     if (self.stillCamera == nil) {
@@ -435,7 +435,7 @@ UIDeviceOrientation currentDeviceOrientation() {
 -(void)switchToVideoMode {
     self.mode = videoCapture;
 
-    UIImage * videoImage = [UIImage imageNamed:@"048 Videocamera@2x.png"];
+    UIImage * videoImage = [UIImage imageNamed:@"VideoCamera"];
     [self.modeButton setImage:videoImage forState:UIControlStateNormal];
     
     if (self.videoCamera == nil) {
