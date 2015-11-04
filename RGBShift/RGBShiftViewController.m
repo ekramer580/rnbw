@@ -11,6 +11,9 @@
 #import "GPUImageRGBShiftFilter.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "TutorialViewController.h"
+
+#define kTutorialCompleted @"tutorialCompleted"
 
 typedef enum {
     stillCaptureJPEG = 1,
@@ -19,6 +22,8 @@ typedef enum {
     stillEdit        = 4
 }  cameraMode;
 @interface RGBShiftViewController ()
+
+@property (nonatomic) UIImageView *overlayView;
 
 @property (nonatomic) GPUImageStillCamera       *stillCamera;
 @property (nonatomic) GPUImageVideoCamera       *videoCamera;
@@ -69,6 +74,10 @@ UIInterfaceOrientation OutputOrientationFromDeviceOrientation(UIDeviceOrientatio
     }
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait; // + UIInterfaceOrientationMaskPortraitUpsideDown;
@@ -100,6 +109,7 @@ UIDeviceOrientation currentDeviceOrientation() {
 {
     [super viewDidLoad];
     [self.view layoutIfNeeded];
+    
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
 
@@ -166,6 +176,46 @@ UIDeviceOrientation currentDeviceOrientation() {
 
     self.startMoviePlaybackButton.hidden = true;
     [self switchToStillCameraMode];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL tutorialCompleted = [[defaults objectForKey:kTutorialCompleted] boolValue];
+    
+    // Tutorial
+    if (tutorialCompleted == NO) {
+        NSString *launchImageString;
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 480) {
+            launchImageString = @"LaunchImage-700@2x.png"; // iPhone 4/4s, 3.5 inch screen
+        } else {
+            launchImageString = @"LaunchImage-700-568h@2x.png";
+        }
+        UIImage *launchImage = [UIImage imageNamed:launchImageString];
+        self.overlayView = [[UIImageView alloc] initWithImage:launchImage];
+        self.overlayView.frame = self.view.frame;
+        [self.view addSubview:self.overlayView];
+        [self.view bringSubviewToFront:self.overlayView];
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL tutorialCompleted = [[defaults objectForKey:kTutorialCompleted] boolValue];
+    
+    // Tutorial
+    if (tutorialCompleted == NO) {
+        [defaults setObject:@YES forKey:kTutorialCompleted];
+        [defaults synchronize];
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
+        TutorialViewController *tutorialViewController = [mainStoryboard instantiateViewControllerWithIdentifier:NSStringFromClass([TutorialViewController class])];
+        [self presentViewController:tutorialViewController animated:YES completion:^{
+            [self.overlayView removeFromSuperview];
+            self.overlayView = nil;
+        }];
+    }
 }
 
 - (IBAction)startMoviePlaybackPressed:(id)sender {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DDB9CE41BE93649009ECD08 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDB9CE31BE93649009ECD08 /* Media.xcassets */; };
+		4DDB9CE91BE9421D009ECD08 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB9CE81BE9421D009ECD08 /* TutorialViewController.m */; };
 		856F450D17DEA739004EA730 /* glyphicons_173_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 856F450B17DEA739004EA730 /* glyphicons_173_play@2x.png */; };
 		856F450E17DEA739004EA730 /* glyphicons_220_play_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 856F450C17DEA739004EA730 /* glyphicons_220_play_button@2x.png */; };
 		85AA8B4617C643B400009E66 /* glyphicons_377_riflescope@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AA8B4517C643B400009E66 /* glyphicons_377_riflescope@2x.png */; };
@@ -26,9 +28,6 @@
 		85FE8A42176BA86200900F3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A40176BA86200900F3A /* InfoPlist.strings */; };
 		85FE8A44176BA86200900F3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A43176BA86200900F3A /* main.m */; };
 		85FE8A48176BA86200900F3A /* RGBShiftAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A47176BA86200900F3A /* RGBShiftAppDelegate.m */; };
-		85FE8A4A176BA86200900F3A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A49176BA86200900F3A /* Default.png */; };
-		85FE8A4C176BA86300900F3A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A4B176BA86200900F3A /* Default@2x.png */; };
-		85FE8A4E176BA86300900F3A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A4D176BA86300900F3A /* Default-568h@2x.png */; };
 		85FE8A51176BA86300900F3A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FE8A4F176BA86300900F3A /* MainStoryboard.storyboard */; };
 		85FE8A54176BA86300900F3A /* RGBShiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE8A53176BA86300900F3A /* RGBShiftViewController.m */; };
 		85FE8A5C176BA86300900F3A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FE8A5B176BA86300900F3A /* SenTestingKit.framework */; };
@@ -78,6 +77,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DDB9CE31BE93649009ECD08 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		4DDB9CE71BE9421D009ECD08 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
+		4DDB9CE81BE9421D009ECD08 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
 		856F450B17DEA739004EA730 /* glyphicons_173_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_173_play@2x.png"; sourceTree = "<group>"; };
 		856F450C17DEA739004EA730 /* glyphicons_220_play_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_220_play_button@2x.png"; sourceTree = "<group>"; };
 		85AA8B4517C643B400009E66 /* glyphicons_377_riflescope@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_377_riflescope@2x.png"; sourceTree = "<group>"; };
@@ -102,9 +104,6 @@
 		85FE8A45176BA86200900F3A /* RGBShift-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RGBShift-Prefix.pch"; sourceTree = "<group>"; };
 		85FE8A46176BA86200900F3A /* RGBShiftAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBShiftAppDelegate.h; sourceTree = "<group>"; };
 		85FE8A47176BA86200900F3A /* RGBShiftAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBShiftAppDelegate.m; sourceTree = "<group>"; };
-		85FE8A49176BA86200900F3A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		85FE8A4B176BA86200900F3A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		85FE8A4D176BA86300900F3A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		85FE8A50176BA86300900F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		85FE8A52176BA86300900F3A /* RGBShiftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBShiftViewController.h; sourceTree = "<group>"; };
 		85FE8A53176BA86300900F3A /* RGBShiftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBShiftViewController.m; sourceTree = "<group>"; };
@@ -168,10 +167,6 @@
 		85FE8A2B176BA86200900F3A = {
 			isa = PBXGroup;
 			children = (
-				85EFC3D817C95A9D00406E5B /* MobileCoreServices.framework */,
-				85D0DB9317712CD7005077DB /* CoreVideo.framework */,
-				85D0DB7E1770C7AB005077DB /* QuartzCore.framework */,
-				85D0DB7C1770C79F005077DB /* OpenGLES.framework */,
 				85FE8A3D176BA86200900F3A /* RGBShift */,
 				85FE8A61176BA86300900F3A /* RGBShiftTests */,
 				85FE8A36176BA86200900F3A /* Frameworks */,
@@ -192,6 +187,10 @@
 			isa = PBXGroup;
 			children = (
 				85D0DB9517712F96005077DB /* GPUImage.xcodeproj */,
+				85EFC3D817C95A9D00406E5B /* MobileCoreServices.framework */,
+				85D0DB9317712CD7005077DB /* CoreVideo.framework */,
+				85D0DB7E1770C7AB005077DB /* QuartzCore.framework */,
+				85D0DB7C1770C79F005077DB /* OpenGLES.framework */,
 				85FE8A7E176BB3AB00900F3A /* CoreMedia.framework */,
 				85FE8A7C176BACC800900F3A /* AssetsLibrary.framework */,
 				85FE8A72176BA8A500900F3A /* AVFoundation.framework */,
@@ -217,6 +216,9 @@
 				85FE8A75176BAB1300900F3A /* AVCamCaptureManager.m */,
 				85FE8A78176BAB4100900F3A /* AVCamUtilities.h */,
 				85FE8A79176BAB4100900F3A /* AVCamUtilities.m */,
+				4DDB9CE71BE9421D009ECD08 /* TutorialViewController.h */,
+				4DDB9CE81BE9421D009ECD08 /* TutorialViewController.m */,
+				4DDB9CE31BE93649009ECD08 /* Media.xcassets */,
 				85FE8A3E176BA86200900F3A /* Supporting Files */,
 			);
 			path = RGBShift;
@@ -237,9 +239,6 @@
 				85AA8B4917C6447D00009E66 /* 048 Videocamera@2x.png */,
 				85AA8B4717C6446B00009E66 /* 030 Camera@2x.png */,
 				85FE8A45176BA86200900F3A /* RGBShift-Prefix.pch */,
-				85FE8A49176BA86200900F3A /* Default.png */,
-				85FE8A4B176BA86200900F3A /* Default@2x.png */,
-				85FE8A4D176BA86300900F3A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -365,9 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85FE8A42176BA86200900F3A /* InfoPlist.strings in Resources */,
-				85FE8A4A176BA86200900F3A /* Default.png in Resources */,
-				85FE8A4C176BA86300900F3A /* Default@2x.png in Resources */,
-				85FE8A4E176BA86300900F3A /* Default-568h@2x.png in Resources */,
+				4DDB9CE41BE93649009ECD08 /* Media.xcassets in Resources */,
 				85FE8A51176BA86300900F3A /* MainStoryboard.storyboard in Resources */,
 				85FFAC4718045601000B9467 /* video_indicator_light.png in Resources */,
 				85AA8B4617C643B400009E66 /* glyphicons_377_riflescope@2x.png in Resources */,
@@ -411,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDB9CE91BE9421D009ECD08 /* TutorialViewController.m in Sources */,
 				85FE8A44176BA86200900F3A /* main.m in Sources */,
 				85FE8A48176BA86200900F3A /* RGBShiftAppDelegate.m in Sources */,
 				85FE8A54176BA86300900F3A /* RGBShiftViewController.m in Sources */,
@@ -542,6 +540,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -563,6 +563,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
