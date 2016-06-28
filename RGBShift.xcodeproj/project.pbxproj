@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4DDB9CE41BE93649009ECD08 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDB9CE31BE93649009ECD08 /* Media.xcassets */; };
 		4DDB9CE91BE9421D009ECD08 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB9CE81BE9421D009ECD08 /* TutorialViewController.m */; };
+		63DF97071D16C27C0097E572 /* ActivityIndicatorBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF97041D16C27C0097E572 /* ActivityIndicatorBox.m */; };
+		63DF97081D16C27C0097E572 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF97061D16C27C0097E572 /* MBProgressHUD.m */; };
 		85BB3C141770C4330087E5C2 /* GPUImageRGBShiftFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BB3C131770C4330087E5C2 /* GPUImageRGBShiftFilter.m */; };
 		85D0DB7D1770C79F005077DB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB7C1770C79F005077DB /* OpenGLES.framework */; };
 		85D0DB7F1770C7AB005077DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D0DB7E1770C7AB005077DB /* QuartzCore.framework */; };
@@ -72,6 +74,10 @@
 		4DDB9CE31BE93649009ECD08 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4DDB9CE71BE9421D009ECD08 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
 		4DDB9CE81BE9421D009ECD08 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
+		63DF97031D16C27C0097E572 /* ActivityIndicatorBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorBox.h; sourceTree = "<group>"; };
+		63DF97041D16C27C0097E572 /* ActivityIndicatorBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorBox.m; sourceTree = "<group>"; };
+		63DF97051D16C27C0097E572 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		63DF97061D16C27C0097E572 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		85BB3C121770C4330087E5C2 /* GPUImageRGBShiftFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageRGBShiftFilter.h; sourceTree = "<group>"; };
 		85BB3C131770C4330087E5C2 /* GPUImageRGBShiftFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageRGBShiftFilter.m; sourceTree = "<group>"; };
 		85D0DB7C1770C79F005077DB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -139,6 +145,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63DF97001D16C2660097E572 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				63DF97031D16C27C0097E572 /* ActivityIndicatorBox.h */,
+				63DF97041D16C27C0097E572 /* ActivityIndicatorBox.m */,
+				63DF97051D16C27C0097E572 /* MBProgressHUD.h */,
+				63DF97061D16C27C0097E572 /* MBProgressHUD.m */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
 		85D0DB9617712F96005077DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +187,7 @@
 		85FE8A36176BA86200900F3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63DF97001D16C2660097E572 /* HUD */,
 				85D0DB9517712F96005077DB /* GPUImage.xcodeproj */,
 				85EFC3D817C95A9D00406E5B /* MobileCoreServices.framework */,
 				85D0DB9317712CD7005077DB /* CoreVideo.framework */,
@@ -285,7 +303,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RGBShift;
-				LastTestingUpgradeCheck = 0710;
+				LastTestingUpgradeCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Mason Kramer";
 			};
@@ -376,6 +394,8 @@
 				85FE8A44176BA86200900F3A /* main.m in Sources */,
 				85FE8A48176BA86200900F3A /* RGBShiftAppDelegate.m in Sources */,
 				85FE8A54176BA86300900F3A /* RGBShiftViewController.m in Sources */,
+				63DF97081D16C27C0097E572 /* MBProgressHUD.m in Sources */,
+				63DF97071D16C27C0097E572 /* ActivityIndicatorBox.m in Sources */,
 				85FE8A76176BAB1300900F3A /* AVCamCaptureManager.m in Sources */,
 				85FE8A7A176BAB4100900F3A /* AVCamUtilities.m in Sources */,
 				85BB3C141770C4330087E5C2 /* GPUImageRGBShiftFilter.m in Sources */,
@@ -517,9 +537,9 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kramersoftwarellc.rnbw;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.org.humanfocus.MainApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "46a1859e-1c7d-433a-934b-72cafb8e0a63";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/GPUImage/framework/Source/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -541,9 +561,9 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kramersoftwarellc.rnbw;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.org.humanfocus.MainApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "46a1859e-1c7d-433a-934b-72cafb8e0a63";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/GPUImage/framework/Source/**";
 				WRAPPER_EXTENSION = app;
 			};

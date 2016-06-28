@@ -318,7 +318,8 @@ void reportAvailableMemoryForGPUImage(NSString *tag)
 
 - (UIImage *)imageFromCurrentFramebuffer;
 {
-	UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
+//    @David I forcefully make it in portrait
+    UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
     UIImageOrientation imageOrientation = UIImageOrientationLeft;
 	switch (deviceOrientation)
     {

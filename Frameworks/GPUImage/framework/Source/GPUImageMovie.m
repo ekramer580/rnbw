@@ -165,7 +165,8 @@
       return;
     }
     
-    if (_shouldRepeat) keepLooping = YES;
+    if (_shouldRepeat)
+        keepLooping = YES;
     
     previousFrameTime = kCMTimeZero;
     previousActualFrameTime = CFAbsoluteTimeGetCurrent();
@@ -378,6 +379,7 @@
             __unsafe_unretained GPUImageMovie *weakSelf = self;
             runSynchronouslyOnVideoProcessingQueue(^{
                 [weakSelf processMovieFrame:sampleBufferRef];
+//                [self writeSampleBuffer:sampleBufferRef ofType:AVMediaTypeVideo];
                 CMSampleBufferInvalidate(sampleBufferRef);
                 CFRelease(sampleBufferRef);
             });
@@ -402,7 +404,32 @@
     }
     return NO;
 }
-
+- (void) writeSampleBuffer:(CMSampleBufferRef)sampleBuffer ofType:(NSString *)mediaType
+{
+    if ( synchronizedMovieWriter.assetWriter.status == AVAssetWriterStatusUnknown ) {
+        
+        if ([synchronizedMovieWriter.assetWriter startWriting]) {
+            [synchronizedMovieWriter.assetWriter startSessionAtSourceTime:kCMTimeZero];//CMSampleBufferGetPresentationTimeStamp(sampleBuffer)];
+        }
+        else {
+            //            [self showError:[assetWriter error]];
+        }
+    }
+    
+    if ( synchronizedMovieWriter.assetWriter.status == AVAssetWriterStatusWriting ) {
+        
+        if (mediaType == AVMediaTypeVideo) {
+            if (synchronizedMovieWriter.assetWriterVideoInput.readyForMoreMediaData) {
+                if (![synchronizedMovieWriter.assetWriterVideoInput appendSampleBuffer:sampleBuffer]) {
+                    //                    [self showError:[assetWriter error]];
+                }
+            }
+        }
+        
+    }
+    
+    
+}
 - (BOOL)readNextAudioSampleFromOutput:(AVAssetReaderOutput *)readerAudioTrackOutput;
 {
     if (reader.status == AVAssetReaderStatusReading && ! audioEncodingIsFinished)
@@ -698,7 +725,7 @@
     if ([self.delegate respondsToSelector:@selector(didCompletePlayingMovie)]) {
         [self.delegate didCompletePlayingMovie];
     }
-    self.delegate = nil;
+//    self.delegate = nil;
 }
 
 - (void)cancelProcessing

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "GPUImage.h"
+#import "ActivityIndicatorBox.h"
 
-@interface RGBShiftViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface RGBShiftViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,GPUImageMovieDelegate,GPUImageMovieWriterDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *stillButton;
 @property (weak, nonatomic) IBOutlet GPUImageView *videoPreviewView;

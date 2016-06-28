@@ -19,8 +19,7 @@ extern NSString *const kGPUImageColorSwizzlingFragmentShaderString;
     NSURL *movieURL;
     NSString *fileType;
 	AVAssetWriter *assetWriter;
-	AVAssetWriterInput *assetWriterAudioInput;
-	AVAssetWriterInput *assetWriterVideoInput;
+	
     AVAssetWriterInputPixelBufferAdaptor *assetWriterPixelBufferInput;
     
     GPUImageContext *_movieWriterContext;
@@ -30,7 +29,8 @@ extern NSString *const kGPUImageColorSwizzlingFragmentShaderString;
     CGSize videoSize;
     GPUImageRotationMode inputRotation;
 }
-
+@property(readwrite, nonatomic) AVAssetWriterInput *assetWriterAudioInput;
+@property(readwrite, nonatomic) AVAssetWriterInput *assetWriterVideoInput;
 @property(readwrite, nonatomic) BOOL hasAudioTrack;
 @property(readwrite, nonatomic) BOOL shouldPassthroughAudio;
 @property(readwrite, nonatomic) BOOL shouldInvalidateAudioSampleWhenDone;

@@ -211,7 +211,7 @@ NSString *const kGPUImageYUVVideoRangeConversionForLAFragmentShaderString = SHAD
 	{
 		[_captureSession addInput:videoInput];
 	}
-	
+   
 	// Add the video frame output	
 	videoOutput = [[AVCaptureVideoDataOutput alloc] init];
 	[videoOutput setAlwaysDiscardsLateVideoFrames:NO];
@@ -494,11 +494,14 @@ NSString *const kGPUImageYUVVideoRangeConversionForLAFragmentShaderString = SHAD
         {
             [_captureSession addInput:videoInput];
         }
+       
         //captureSession.sessionPreset = oriPreset;
         [_captureSession commitConfiguration];
     }
     
     _inputCamera = backFacingCamera;
+//    @david
+//internalRotation = kGPUImageNoRotation;
     [self setOutputImageOrientation:_outputImageOrientation];
 }
 
@@ -963,7 +966,7 @@ NSString *const kGPUImageYUVVideoRangeConversionForLAFragmentShaderString = SHAD
     {
         return;
     }
-    else if (captureOutput == audioOutput)
+    else if (connection == [audioOutput connectionWithMediaType:AVMediaTypeAudio])
     {
         [self processAudioSampleBuffer:sampleBuffer];
     }
@@ -1128,6 +1131,7 @@ NSString *const kGPUImageYUVVideoRangeConversionForLAFragmentShaderString = SHAD
             [currentTarget setInputRotation:outputRotation atIndex:[[targetTextureIndices objectAtIndex:indexOfObject] integerValue]];
         }
     });
+    
 }
 
 - (void)setOutputImageOrientation:(UIInterfaceOrientation)newValue;
